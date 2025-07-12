@@ -12,6 +12,7 @@ import { Props_Array } from './Props_Array'
 import { Props_click } from './Props_click'
 import { Prop_child } from './Props_child'
 import { InputField } from './inputfield'
+import { HandleCheck } from './HabdleCheckboxes'
 
 function App() {
 
@@ -65,7 +66,9 @@ function App() {
           I am the child
         </Prop_child> */}
 
-        <InputField></InputField>
+        {/* <InputField></InputField> */}
+
+        <HandleCheck></HandleCheck>
 
 
 
