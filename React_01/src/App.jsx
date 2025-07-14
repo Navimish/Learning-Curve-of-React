@@ -13,6 +13,8 @@ import { Props_click } from './Props_click'
 import { Prop_child } from './Props_child'
 import { InputField } from './inputfield'
 import { HandleCheck } from './HabdleCheckboxes'
+import { RadioDropdown } from './Radio&Dropdown'
+import { Arrayobj } from './Array1'
 
 function App() {
 
@@ -68,9 +70,11 @@ function App() {
 
         {/* <InputField></InputField> */}
 
-        <HandleCheck></HandleCheck>
+        {/* <HandleCheck></HandleCheck> */}
 
+        {/* <RadioDropdown></RadioDropdown> */}
 
+          <Arrayobj></Arrayobj>
 
 
         
