@@ -15,6 +15,9 @@ import { InputField } from './inputfield'
 import { HandleCheck } from './HabdleCheckboxes'
 import { RadioDropdown } from './Radio&Dropdown'
 import { Arrayobj } from './Array1'
+import { Array2 } from './Array2'
+import { Clock } from './clock'
+import { NestedLoop } from './Nested/NestedLoop'
 
 function App() {
 
@@ -74,10 +77,17 @@ function App() {
 
         {/* <RadioDropdown></RadioDropdown> */}
 
-          <Arrayobj></Arrayobj>
+        {/* <Arrayobj></Arrayobj> */}
 
 
+        {/* <Array2></Array2> */}
         
+        {/* <Clock></Clock> */}
+
+        <NestedLoop></NestedLoop>
+
+
+
         </>
 
        
