@@ -18,6 +18,7 @@ import { Arrayobj } from './Array1'
 import { Array2 } from './Array2'
 import { Clock } from './clock'
 import { NestedLoop } from './Nested/NestedLoop'
+import { Effect } from './useEffect/Effect1'
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
 
     }
 
-    const friuts = ["mango","apple", "banana","pineapple"]
+    const fruits = ["mango","apple", "banana","pineapple"]
 
     const [name,setname] = useState("harsh")
 
@@ -84,7 +85,9 @@ function App() {
         
         {/* <Clock></Clock> */}
 
-        <NestedLoop></NestedLoop>
+        {/* <NestedLoop></NestedLoop> */}
+
+        <Effect></Effect>
 
 
 
