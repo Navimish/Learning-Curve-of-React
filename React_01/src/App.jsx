@@ -19,6 +19,7 @@ import { Array2 } from './Array2'
 import { Clock } from './clock'
 import { NestedLoop } from './Nested/NestedLoop'
 import { Effect } from './useEffect/Effect1'
+import { LifeCycle } from './LifeCycle'
 
 function App() {
 
@@ -39,6 +40,11 @@ function App() {
     const fruits = ["mango","apple", "banana","pineapple"]
 
     const [name,setname] = useState("harsh")
+
+        const [count,setcount] = useState(0)
+        const [data,setdata] = useState(0)
+        const [display, setdisplay] = useState(true)
+
 
       return(
         <>
@@ -87,8 +93,18 @@ function App() {
 
         {/* <NestedLoop></NestedLoop> */}
 
-        <Effect></Effect>
+        {/* <Effect></Effect> */}
 
+          {
+            display?<LifeCycle count ={count} data ={data}></LifeCycle>:null
+          }
+
+          
+        <button onClick={()=>{setcount(count+1)}}>update counter</button>
+        <button onClick={()=>{setdata(data+1)}}>update data</button>
+        <button onClick={()=>{setdisplay(!display)}}>Toggle</button>
+
+          
 
 
         </>
