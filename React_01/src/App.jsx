@@ -20,6 +20,10 @@ import { Clock } from './clock'
 import { NestedLoop } from './Nested/NestedLoop'
 import { Effect } from './useEffect/Effect1'
 import { LifeCycle } from './LifeCycle'
+import { Card } from './Cards/Card'
+import { CardStyling } from './Cards/CardStyling'
+import { StyledComponent } from './StyledComponents'
+import { UseRef } from './hooks/UseRef'
 
 function App() {
 
@@ -95,14 +99,23 @@ function App() {
 
         {/* <Effect></Effect> */}
 
-          {
+          {/* {
             display?<LifeCycle count ={count} data ={data}></LifeCycle>:null
           }
 
           
         <button onClick={()=>{setcount(count+1)}}>update counter</button>
         <button onClick={()=>{setdata(data+1)}}>update data</button>
-        <button onClick={()=>{setdisplay(!display)}}>Toggle</button>
+        <button onClick={()=>{setdisplay(!display)}}>Toggle</button> */}
+
+
+        {/* <CardStyling></CardStyling> */}
+
+        {/* <StyledComponent></StyledComponent> */}
+
+        <UseRef></UseRef>
+
+
 
           
 
