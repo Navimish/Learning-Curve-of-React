@@ -24,6 +24,7 @@ import { Card } from './Cards/Card'
 import { CardStyling } from './Cards/CardStyling'
 import { StyledComponent } from './StyledComponents'
 import { UseRef } from './hooks/UseRef'
+import { Uncontrolled } from './UncontrolledComponenet'
 
 function App() {
 
@@ -113,9 +114,9 @@ function App() {
 
         {/* <StyledComponent></StyledComponent> */}
 
-        <UseRef></UseRef>
+        {/* <UseRef></UseRef> */}
 
-
+            <Uncontrolled></Uncontrolled>
 
           
 
