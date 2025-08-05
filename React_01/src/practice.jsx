@@ -1,18 +1,34 @@
-import { useRef } from "react"
+import React, { useRef, useState } from 'react'
 
-export function Userefprac(){
+function Practice() {
 
-    const updateRef = useRef();
+    const [user, setuser] = useState(0);
+    const [last, setlast] = useState(null);
 
-    function handleUpdate(){
+    const userRef = useRef(null);
 
-        updateRef.current.value = 200;
+    function handlebtn(){
+
+        setuser(user+1);
+        setlast(userRef.current.value)
+
+
     }
 
-    return(
-        <>
-        <input type="text" ref={updateRef} />
-        <button onClick={handleUpdate}>update</button>
-        </>
-    )
+    
+  return (
+    <div>
+
+        <h1>Total user : {user}</h1>
+        <h1>Total unique user : </h1>
+        <h1>Last user :{last} </h1>
+
+        <input ref={userRef} type="text" name="" id="" />
+        <br />
+        <button onClick={handlebtn}>Add</button>
+      
+    </div>
+  )
 }
+
+export default Practice

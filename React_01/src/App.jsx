@@ -26,9 +26,13 @@ import { StyledComponent } from "./StyledComponents";
 import { UseRef } from "./hooks/UseRef";
 import { Uncontrolled } from "./UncontrolledComponenet";
 import { Parent } from "./functionAsProp/parent";
-import { Userefprac } from "./practice";
+import Practice from "./practice";
 import FRparent from "./Forward_ref/FRparent";
 import { UseFormStatus } from "./hooks/UseFormStatus";
+import UseTansition from "./hooks/UseTansition";
+import { DerivedState } from "./DerivedState";
+import Parentlift from "./LiftingStateUP/parent";
+import ObjectinStates from "./ObjectinStates";
 
 function App() {
   const user1 = {
@@ -122,7 +126,17 @@ function App() {
 
       {/* <FRparent></FRparent> */}
 
-      <UseFormStatus></UseFormStatus>
+      {/* <UseFormStatus></UseFormStatus> */}
+
+      {/* <UseTansition></UseTansition> */}
+
+      {/* <Practice></Practice> */}
+
+      {/* <DerivedState></DerivedState> */}
+
+      {/* <Parentlift></Parentlift> */}
+
+      <ObjectinStates></ObjectinStates>
     </>
   );
 }
