@@ -33,6 +33,9 @@ import UseTansition from "./hooks/UseTansition";
 import { DerivedState } from "./DerivedState";
 import Parentlift from "./LiftingStateUP/parent";
 import ObjectinStates from "./ObjectinStates";
+import { UpdateArray } from "./updateArray";
+import { UseActionState } from "./hooks/UseActionState";
+import UseToggleMain from "./CustomHooks/useToggleMain";
 
 function App() {
   const user1 = {
@@ -136,7 +139,13 @@ function App() {
 
       {/* <Parentlift></Parentlift> */}
 
-      <ObjectinStates></ObjectinStates>
+      {/* <ObjectinStates></ObjectinStates> */}
+
+      {/* <UpdateArray></UpdateArray> */}
+
+      {/* <UseActionState></UseActionState> */}
+
+      <UseToggleMain></UseToggleMain>
     </>
   );
 }
