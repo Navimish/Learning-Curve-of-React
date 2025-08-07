@@ -36,6 +36,8 @@ import ObjectinStates from "./ObjectinStates";
 import { UpdateArray } from "./updateArray";
 import { UseActionState } from "./hooks/UseActionState";
 import UseToggleMain from "./CustomHooks/useToggleMain";
+import { CollegeCompo } from "./contextApi/CollegeCompo";
+import Routescompo from "./Routing/routes";
 
 function App() {
   const user1 = {
@@ -145,7 +147,12 @@ function App() {
 
       {/* <UseActionState></UseActionState> */}
 
-      <UseToggleMain></UseToggleMain>
+      {/* <UseToggleMain></UseToggleMain> */}
+
+      {/* <CollegeCompo></CollegeCompo> */}
+      
+      <Routescompo></Routescompo>
+
     </>
   );
 }
