@@ -38,6 +38,7 @@ import { UseActionState } from "./hooks/UseActionState";
 import UseToggleMain from "./CustomHooks/useToggleMain";
 import { CollegeCompo } from "./contextApi/CollegeCompo";
 import Routescompo from "./Routing/routes";
+import { Navbar } from "./Navbar/Navbar1";
 
 function App() {
   const user1 = {
@@ -151,7 +152,9 @@ function App() {
 
       {/* <CollegeCompo></CollegeCompo> */}
       
-      <Routescompo></Routescompo>
+      {/* <Routescompo></Routescompo> */}
+
+      <Navbar></Navbar>
 
     </>
   );

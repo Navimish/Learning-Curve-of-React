@@ -1,0 +1,32 @@
+.navbar {
+  background-color: #333;       /* Dark background */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;                   /* Space between links */
+}
+
+.navbar h2 {
+  color: #fff;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
