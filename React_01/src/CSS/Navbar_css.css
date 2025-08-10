@@ -1,9 +1,9 @@
 .navbar {
-  background-color: #333;       /* Dark background */
+  background-color: #333; /* Dark background */
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  gap: 20px;                   /* Space between links */
+  gap: 20px; /* Space between NavLinks */
 }
 
 .navbar h2 {
@@ -29,4 +29,16 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.active {
+  color: #ffcc00; /* Highlight color */
+  font-weight: bold;
+  border-bottom: 2px solid #ffcc00; /* Underline effect */
+  transition: all 0.3s ease;
+}
+
+.custom-active {
+  color: blue; /* yellow-600 */
+  border-bottom: 2px solid blue;
 }

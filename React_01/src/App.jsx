@@ -39,6 +39,8 @@ import UseToggleMain from "./CustomHooks/useToggleMain";
 import { CollegeCompo } from "./contextApi/CollegeCompo";
 import Routescompo from "./Routing/routes";
 import { Navbar } from "./Navbar/Navbar1";
+import FirstRoutes from "./Navbar/FirstRoutes";
+import { ApiData } from "./Apidata";
 
 function App() {
   const user1 = {
@@ -154,7 +156,12 @@ function App() {
       
       {/* <Routescompo></Routescompo> */}
 
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
+
+      {/* <FirstRoutes></FirstRoutes> */}
+
+      <ApiData></ApiData>
+      
 
     </>
   );

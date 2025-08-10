@@ -1,37 +1,23 @@
-import { Route, Routes, Link, Navigate } from "react-router-dom";
-import { HomePage } from "./HomePage";
-import { AboutPage } from "./AboutPage";
-import { ContactPage } from "./ContactPage";
+import { Route, Routes, NavLink, Navigate, Outlet } from "react-router-dom";
+
 import "./../CSS/Navbar_css.css";
-import { MyCollege } from "./College";
-import { SectionA } from "./SectionA";
-import { SectionB } from "./sectionB";
-import { SectionC } from "./SectionC";
+import FirstRoutes from "./FirstRoutes";
 
 export function Navbar() {
   return (
     <>
       <div className="navbar">
-        <Link to={"/"}>
+        <NavLink to={"/"}>
           <h2>Logo</h2>
-        </Link>
-        <Link to={"/"}>Home Page</Link>
-        <Link to={"/about"}>About Page</Link>
-        <Link to={"/contact"}>Contact Page</Link>
-        <Link to={"/mycollege"}>College</Link>
+        </NavLink>
+        <NavLink className={({isActive})=>isActive?"custom-active":"link"} to={"/"}>Home Page</NavLink>
+        <NavLink to={"/about"}>About Page</NavLink>
+        <NavLink to={"/contact"}>Contact Page</NavLink>
+        <NavLink to={"/mycollege"}>College</NavLink>
+        <NavLink to={"/users"}> Users</NavLink>
+        <NavLink to={"/users/list"}> List</NavLink>
       </div>
-
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
-        <Route path="/contact" element={<ContactPage />}></Route>
-        <Route path="/mycollege" element={<MyCollege />}>
-          <Route path="sectionA" element={<SectionA></SectionA>}></Route>
-          <Route path="sectionB" element={<SectionB></SectionB>}></Route>
-          <Route path="sectionC" element={<SectionC></SectionC>}></Route>
-        </Route>
-        <Route path="/*" element={<Navigate to="/"></Navigate>}></Route>
-      </Routes>
+      <Outlet></Outlet>
     </>
   );
 }
