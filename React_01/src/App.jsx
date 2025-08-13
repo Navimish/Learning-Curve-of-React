@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router";
 
 import First from "./first";
 import Login, { Key, Profile } from "./userComponents";
@@ -41,6 +42,13 @@ import Routescompo from "./Routing/routes";
 import { Navbar } from "./Navbar/Navbar1";
 import FirstRoutes from "./Navbar/FirstRoutes";
 import { ApiData } from "./Apidata";
+import { ApiPractice } from "./ApiPractice";
+import { UserList } from "./ApiFiles/userList";
+import ApiRoutes from "./ApiFiles/ApiRoutes";
+import { FormValidation } from "./FormValidation";
+import UseReducerhook from "./hooks/UseReducerhook";
+import { LazyParent } from "./LazyLoading/LazyParent";
+import { Use_api } from "./use_Api";
 
 function App() {
   const user1 = {
@@ -160,7 +168,36 @@ function App() {
 
       {/* <FirstRoutes></FirstRoutes> */}
 
-      <ApiData></ApiData>
+      {/* <ApiData></ApiData> */}
+
+      {/* <ApiPractice></ApiPractice> */}
+
+        {/* <div className="flex justify-between items-center gap-2 bg-gray-200 p-3 rounded-md">
+        <NavLink to="/" className="text-blue-600 font-semibold hover:underline">
+          List
+        </NavLink>
+        <NavLink
+          to="/add"
+          className="text-blue-600 font-semibold hover:underline"
+        >
+          Add
+        </NavLink>
+      </div>
+
+      <ApiRoutes></ApiRoutes> */}
+
+      {/* <FormValidation></FormValidation> */}
+      {/* <UseReducerhook></UseReducerhook> */}
+
+      <div style={{textAlign: 'center', marginTop:"100px"}}>
+
+
+      {/* <LazyParent></LazyParent> */}
+
+      <Use_api></Use_api>
+      </div>
+
+     
       
 
     </>

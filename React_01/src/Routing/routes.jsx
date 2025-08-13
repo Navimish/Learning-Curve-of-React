@@ -18,6 +18,7 @@ function Routescompo() {
         <Route path="/" element={<h1>Home Page</h1>}></Route>
         <Route path="/about" element={<h1>About Page</h1>}></Route>
         <Route path="/contact" element={<h1>Contact Page</h1>}></Route>
+        
       </Routes>
     </div>
   );
